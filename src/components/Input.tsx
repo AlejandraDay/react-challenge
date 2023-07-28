@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes } from 'react';
 import { TextField, InputAdornment } from '@mui/material';
-import { IconType } from 'react-icons'; // Importar IconType para el tipado de los iconos
+import { IconType } from 'react-icons'; 
 
 type TextFieldProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'label'>;
 
