@@ -10,7 +10,7 @@ import { ColorData } from '../services/interface';
 const Page1: React.FC = () => {
   const navigate = useNavigate();
 
-  const [data, setData] = useState([]); // Tipa el estado data correctamente
+  const [data, setData] = useState([]); 
 
   useEffect(() => {
     getData()

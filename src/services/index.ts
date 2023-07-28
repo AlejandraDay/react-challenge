@@ -4,7 +4,7 @@ import { ApiResponse, UserData, PostResponse } from './interface';
 export const getData = async (): Promise<any> => {
   try {
     const response: AxiosResponse<ApiResponse> = await axios.get('https://reqres.in/api/unknown');
-    return response.data.data; // Retorna solo la propiedad "data"
+    return response.data.data; 
   } catch (error) {
     console.error('Error al obtener los datos:', error);
     throw error;

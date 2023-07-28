@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, CardContent, Box, Typography, Grid } from '@mui/material';
-import { BiUser, BiLock, BiLogIn } from 'react-icons/bi'; // Importar los iconos que desees utilizar
+import { BiUser, BiLock, BiLogIn } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 
 import Button from '../components/Button';

@@ -14,7 +14,7 @@ interface PostResponse {
 }
 
 const Page2: React.FC = () => {
-  const [data, setData] = useState<PostResponse | null>(null); // Estado para almacenar la respuesta del servidor
+  const [data, setData] = useState<PostResponse | null>(null); 
 
   const [name, setName] = useState('');
   const [job, setJob] = useState('');
@@ -34,11 +34,11 @@ const Page2: React.FC = () => {
     postData(userData)
       .then((response) => {
         console.log('Respuesta del servidor:', response);
-        setData(response); // Almacenar la respuesta del servidor en el estado "data"
+        setData(response); 
       })
       .catch((error) => {
         console.error('Error al enviar los datos:', error);
-        setMsjError('Error al enviar los datos.'); // Mostrar mensaje de error en caso de fallo
+        setMsjError('Error al enviar los datos.'); 
       });
   };
 
@@ -87,7 +87,7 @@ const Page2: React.FC = () => {
         </Card>
       </Grid>
 
-      {data && ( // Mostrar el Card solo si "data" tiene un valor (la respuesta del servidor)
+      {data && ( 
         <Grid item>
           <Card>
             <CardContent>
